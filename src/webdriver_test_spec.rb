@@ -29,6 +29,8 @@ describe 'Google' do
     puts @driver.title
   end
 
+  # after(:each) - executes each tests separately
+  # after(:all)  - executes all tests in one go
   after(:all) do
     # finally close the browser
     @driver.quit
