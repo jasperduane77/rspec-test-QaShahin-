@@ -11,7 +11,7 @@ describe 'Test Animal Class' do
             # get the name value
             nameValue = animal.getName
             # and check that it is correct
-            puts nameValue
+            expect(nameValue).to eql("Dino")
         end
     
         it 'should set name' do
@@ -21,6 +21,8 @@ describe 'Test Animal Class' do
             # get the name value
             nameValue = animal.setName("Max")
             # and check that it is correct
+
+            expect(nameValue).to eql("Max")
             puts nameValue
         end
     end
@@ -33,7 +35,7 @@ describe 'Test Animal Class' do
             # get the name value
             ageValue = animal.getAge
             # and check that it is correct
-            puts ageValue
+            expect(ageValue).to eql(5)
         end
     
         it 'should set age' do
@@ -43,7 +45,7 @@ describe 'Test Animal Class' do
             # get the name value
             ageValue = animal.setAge(10)
             # and check that it is correct
-            puts ageValue
+            expect(ageValue).to eql(10)
         end
     end
 end
